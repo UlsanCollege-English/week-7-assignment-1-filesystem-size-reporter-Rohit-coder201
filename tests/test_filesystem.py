@@ -63,6 +63,5 @@ def test_mixed_nested():
     assert folder_sizes(root)["sub"] == sum(i for i in range(4))
 
 def test_large_random_shape():
-    # small stress
     n = Node("r", 0, [Node("a",0,[Node("x",5)]), Node("b",0,[Node("y",7), Node("z",9)])])
     assert total_size(n) == 21
